@@ -4,19 +4,13 @@ Dette git reposotory indeholder alt relevant til et datalogi og software projekt
 
 ### Medlemmer ###
 
-Charlie Dittfeldt Byrdam
-
-Jesper Windelborg Nielsen
-
-David Jahanshiri
-
-Nicklas Embo
-
-Rasmus Nørskov
-
-Mark Lauridsen
-
-Andreas Sommerset
+* Charlie Dittfeldt Byrdam
+* Jesper Windelborg Nielsen
+* David Jahanshiri
+* Nicklas Embo
+* Rasmus Nørskov
+* Mark Lauridsen
+* Andreas Sommerset
 
 ### Gruppe ###
 
