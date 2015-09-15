@@ -15,4 +15,4 @@ Dette git reposotory indeholder alt relevant til et datalogi og software projekt
 ### Gruppe ###
 
 Gruppe nr.: ds315e15
-Lokale nr.: 2.1.48
+Lokale nr.: 2.1.48 
