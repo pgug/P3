@@ -1,2 +1,8 @@
 master.pdf
+master.aux
+master.log
+master.out
+master.thm
+master.toc
+master.synctex.gz
 *.thm
