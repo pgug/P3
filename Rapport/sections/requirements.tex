@@ -1,3 +1,65 @@
+\section{Requriments specification}
+
+\subsection{General requriments}
+
+\begin{enumerate}
+    \item \textbf{The application should be a webapp.} The aplication should be an webapp meaning every user interaction should be made thought a browser.
+    \item \textbf{The application should use an MySQL database.} The application should save all the user data, and configuration, in a database.
+    \item \textbf{The application should hash user passwords.}
+    \item The application
+    \begin{enumerate}
+        \item {A user should be able to create a organisation.} An organisation could be a company or union.
+        \begin{enumerate}
+            \item \textbf{An organisation can have multipli users}. A user is a person who could login and see parts of the organisation.
+            \item \textbf{Users in a organisation can have different userlevels.} A user could be a administrator or a regular user.
+            \begin{enumerate}
+                \item A administrator can control which part of the organisation a regular user can access.
+                \item A regular user can login and interact with the parts of the organisation the user have access to.
+                \item A administrator need to permit a user access to the organisation, for the user to become a part of an organisation.
+                \item A user can be a part of multiple organisations. The previliges and access rights is unique to a specific organisation.
+            \end{enumerate}
+            \item \textbf{The application have a CRM module for the organisation}
+            \begin{enumerate}
+                \item The CRM module must be able to create different contacts types
+                \begin{itemize}
+                    \item Customers
+                    \item Suppliers
+                    \item Partners
+                    \item (Buisseness network [BETTER WORDS???])
+                \end{itemize}
+            \end{enumerate}
+            \item The application have a project module.
+            \begin{enumerate}
+                \item The project module must be able to create projects with the following features
+                \begin{itemize}
+                    \item Deadlines and milestones (to estimate time)
+                    \item Assign responsible user for project
+                    \item Create taskes
+                    \item Assign users for a project task
+                    \item Make description for the project.
+                    \item A user can leave comments on the project for other users to see
+                    \item The user can estimate time for the project taskes
+                    \item The user can make sub taskes for a task
+                    \item The user can make a time estimation for a subtask
+                    \item The user can attach documents for a project
+                    \item The project have a "visual presentation" on the taskes and project in general.
+                    \item A project can be archived, where it is seen as complete, and hidden, but can be found again if necessary.
+                \end{itemize}
+            \end{enumerate}
+            \item \textbf{The application have a bookingsystem.}
+            \begin{enumerate}
+                \item The bookingsystem must have a calendar
+            \end{enumerate}
+            \item \textbf{The application must have a sales module}
+            \begin{enumerate}
+                \item The sales application must have a tool for making a swot analysis
+                \item The sales application must have a tool to make a persona
+                \item The sales application must have a tool for sales and billing
+            \end{enumerate}
+        \end{enumerate}
+    \end{enumerate}
+\end{enumerate}
+
 \section{Frontpage}
 \begin{itemize}
 	\item Mail: automatically send email to. Ask to get more information on the topic
