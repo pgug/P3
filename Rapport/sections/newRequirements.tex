@@ -1,0 +1,200 @@
+\section{Requriments specification}
+
+\subsection{General requriments}
+
+
+\subsection{User}
+
+\subsection{CRM module}
+
+\subsection{Project module}
+
+\subsection{Bookingsystem}
+
+\subsection{employee module}
+
+\subsection{Document module}
+
+\subsection{Sales module}
+
+
+
+
+
+
+
+\begin{enumerate}
+    \item \textbf{The application should be a webapp.} The aplication should be an webapp meaning every user interaction should be made thought a browser.
+    \item The application
+    \begin{enumerate}
+        \item {A user should be able to create a organisation.} An organisation could be a company or union.
+        \begin{enumerate}
+            \item \textbf{An organisation can have multipli users}. A user is a person who could login and see parts of the organisation.
+            \item \textbf{Users in a organisation can have different userlevels.} A user could be a administrator or a regular user.
+            \begin{enumerate}
+                \item A administrator can control which part of the organisation a regular user can access.
+                \item A regular user can login and interact with the parts of the organisation the user have access to.
+                \item A administrator need to permit a user access to the organisation, for the user to become a part of an organisation.
+                \item A user can be a part of multiple organisations. The previliges and access rights is unique to a specific organisation.
+            \end{enumerate}
+            \item \textbf{The application have a CRM module for the organisation}
+            \begin{enumerate}
+                \item The CRM module must be able to create different contacts types
+                \begin{itemize}
+                    \item Customers
+                    \item Suppliers
+                    \item Partners
+                    \item (Buisseness network [BETTER WORDS???])
+                \end{itemize}
+            \end{enumerate}
+            \item The application have a project module.
+            \begin{enumerate}
+                \item The project module must be able to create projects with the following features
+                \begin{itemize}\textbf{\textit{skal skrives om til flydende tekst}}
+                    \item Deadlines and milestones (to estimate time)
+                    \item Assign responsible user for project
+                    \item Create taskes
+                    \item Assign users for a project task
+                    \item Make description for the project.
+                    \item A user can leave comments on the project for other users to see
+                    \item The user can estimate time for the project taskes
+                    \item The user can make sub taskes for a task
+                    \item The user can make a time estimation for a subtask
+                    \item The user can attach documents for a project
+                    \item The project have a "visual presentation" on the tasks and project in general.
+                    \item A project can be archived, where it is seen as complete, and hidden, but can be found again if necessary.
+                \end{itemize}
+            \end{enumerate}
+            \item \textbf{The application have a bookingsystem. \textit{der skal skrives en forklaring}} 
+            \begin{enumerate}
+                \item The bookingsystem must have a calendar
+            \end{enumerate}
+            \item \textbf{The application must have a sales module}
+            \begin{enumerate}
+                \item The sales module must have a tool for making a swot analysis
+                \item The sales module must have a tool to make a persona
+                \item The sales module must have a tool for sales and billing
+                \item The sales module must have a tool for product management
+                \begin{itemize}\textbf{\textit{skal skrives om til flydende tekst}}
+                    \item The product can contain a description
+                    \item The product can contain a target group
+                    \item The product can contain a marked description
+                    \item The product can contain a description of competetive products
+                    \item The product can contain a EFU description
+                    \item The product can contain attached diagram/diagrams/sketches
+                    \item The product can contain attached files with acceptianes/certifications
+                    \item The product can contain plans for production, subtaskes and deadlines
+                    \item The product can contain budget informations
+                    \item The product can contain contracts
+                    \item The product can contain manuals
+                    \item The product can contain flyers
+                    \item The product can contain sales model
+                \end{itemize}
+            \end{enumerate}
+            \item \textbf{The application employee module}
+            \begin{enumerate}
+                \item The employee have a profile with
+                \begin{itemize}\textbf{\textit{skal skrives om til flydende tekst}}
+                    \item Their work application
+                    \item CV
+                    \item Educational papers
+                    \item Employement contract
+                    \item Job description
+                    \item Salery details
+                    \item Course papers
+                    \item Milestones for future education
+                    \item Salery negotiations
+                    \item Employee time registration
+                    \item Work group
+                \end{itemize}
+                \item Retirements aggrement
+                \item Work manual
+                \item General job description
+                \item General job posting
+                \item General CV
+                \item General employement contract
+                \item Organisation diagram
+            \end{enumerate}
+            \item \textbf{The application must have a organisation information/documents module}
+            \begin{enumerate}
+                \item Organisation documents
+                \begin{itemize}\textbf{\textit{skal skrives om til flydende tekst}}
+                    \item Deed of incorporation
+                    \item Articles of Association
+                    \item Register of owners
+                    \item Registretions certifactes
+                    \item Permits
+                    \item Tax papers
+                \end{itemize}
+                \item General documents
+                \begin{itemize}
+                    \item Business plan
+                    \item Organisation diagram
+                    \item Process descriptions
+                    \item Checklists
+                    \item Design manual
+                \end{itemize}
+                \item General contracts
+                \begin{itemize}
+                    \item Cooperation agreements
+                    \item Business terms
+                \end{itemize}
+                \item Economy and finances
+                \begin{itemize}
+                    \item Annual financial report
+                    \item Budgets
+                \end{itemize}
+            \end{enumerate}
+        \end{enumerate}
+    \end{enumerate}
+\end{enumerate}
+
+\section{Frontpage}
+\begin{itemize}
+  \item Mail: automatically send email to. Ask to get more information on the topic
+  \item Calendar: calendar built in to the application. Will be able to track tasks and time.
+  \item Overview: Small widget with upcoming important events
+  \item Widget showing latests transactions, and showing rough balance. Showing comparisons between current situation and set goals.
+  \item Small ideas in the style of sticky notes. Write different notes under each idea.
+\end{itemize}
+
+\section{CRM Module}
+\begin{itemize}
+  \item Customer management.
+  \item Automated tasks such as reminders in a set amount of time. 
+  \item Sortable list of all interraction with a client. Such as drop down menus with specific times for interactions, or list of latest interactions.
+  \item Different clients will be assignable to custom projects. These may be created from scrap or moved to projects from the idea widget.
+  \item List of invoices for each client. The will probably be integratable with with the list of client interactions.
+  \item Support for inserting different document types such as PDF, Doc and txt.
+  \item Low priority - support for import and export to and from Dinero. 
+\end{itemize}
+
+\section{Project/case module}
+\begin{itemize}
+  \item Be able to create different projects. These projects will contain information about budget, the people working on it and more.
+\end{itemize}
+
+\section{Booking System}
+\begin{itemize}
+  \item System for handling invoices, such as receiving and sending payments.
+\end{itemize}
+
+\section{Employees}
+\begin{itemize}
+  \item Functionality to invite and apply to registered companies on the website. If accepted an employer will have functionality to manage these employees on a employee page. An employee will have different useful information on their page under the company.
+\end{itemize}
+
+\section{Products}
+\begin{itemize}
+  \item A product will be a seperate object from the company, with it's own budget section, and it's own calendar section with deadlines and overviews. Employees asigned to the product will be able to go to the product page and view what the employer is allowing them to, such as tasks and deadlines. It will also contain contracts, manuals, description and target audiences and more, all information about the product from start to finish.
+\end{itemize}
+
+\section{Sale and Marketing}
+\begin{itemize}
+  \item Assisted list of different information about sale and sale strategy for a product, such as goals and planning. Every product will have a sale page. Under the company there will be a list of all the product sale strategies.
+\end{itemize}
+
+\section{Selskabsdukumenter}
+\begin{itemize}
+  \item Category for business documents. These should be linkable to products.
+\end{itemize}
