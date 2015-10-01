@@ -18,6 +18,10 @@ Make some goals
 
 Turn off the sound
 
+### Task 5
+
+Give your avatar a new hat
+
 ## Questionnaire
 
 | ID | AGE | NATIONALITY | OCCUPATION | SMARTPHONE EXPERIENCE | NORMAL EXERCISE IN A DAY |
