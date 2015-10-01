@@ -8,8 +8,15 @@
 |   2  | Send a challenge to a friend named John                |
 |   3  | Make some goals                                        |
 |   4  | Turn off the sound                                     |
-|   5  | Give your avatar a new hat                             |
+|   5  | Give your avatar a new hat the "Tophat"                |
 |   6  | Start a new bicycling activity with a predefined route |
+
+## User task fisk
+
+|                     | Task |         |               |
+|------------|-----------|-------------|               |
+| Testperson | 1 | 2 | 3 | 4 | 5 | 6   |   Total       |
+|     1      | 2:00 | 0:34 | 6:01 | 0:22 | 0:35 | 1:37 |
 
 ## Questionnaire
 
