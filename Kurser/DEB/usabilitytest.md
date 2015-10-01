@@ -2,29 +2,14 @@
 
 ## Test scenarios
 
-### Task 1
-
-Register and sign in.
-
-### Task 2
-
-Send a challenge to a friend named John
-
-### Task 3
-
-Make some goals
-
-### Task 4
-
-Turn off the sound
-
-### Task 5
-
-Give your avatar a new hat
-
-### Task 6
-
-Start a new bicycling activity with a predefined route
+| Task | Description                                            |
+| -----|--------------------------------------------------------|
+|   1  | Register and sign in.                                  |
+|   2  | Send a challenge to a friend named John                |
+|   3  | Make some goals                                        |
+|   4  | Turn off the sound                                     |
+|   5  | Give your avatar a new hat                             |
+|   6  | Start a new bicycling activity with a predefined route |
 
 ## Questionnaire
 
