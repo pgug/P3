@@ -21,8 +21,8 @@
 
 ## Classified usability problems
 
-|    Problem           | Classification |  1  |  2  |  3 |
-|----------------------|----------------|-----|-----|----|
-| 1. No coffee         |    Cosmetic    |     |  x  |    |
-| 2. App died          |    Critical    |  x  |     |    |
-| 3. Can't find friend |    Serious     |     |     |  x |
+|    Problem           | Classification |  1  |  2  |  3 | Number of times |
+|----------------------|----------------|-----|-----|----|-----------------|
+| 1. No coffee         |    Cosmetic    |     |  x  |    |                 |
+| 2. App died          |    Critical    |  x  |     |    |                 |
+| 3. Can't find friend |    Serious     |     |     |  x |                 |
