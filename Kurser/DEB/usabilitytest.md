@@ -10,11 +10,18 @@ Register and sign in.
 
 Send a challenge to a friend named John
 
+### Task 3
+
+Make some goals
+
+### Task 4
+
+Turn off the sound
+
 ## Questionnaire
 
 | ID | AGE | NATIONALITY | OCCUPATION | SMARTPHONE EXPERIENCE | NORMAL EXERCISE IN A DAY |
 ------------------------------------------------------------------------------------------
-|    |     |             |            |                       |                          |
-|    |     |             |            |                       |                          |
-|    |     |             |            |                       |                          |
-|    |     |             |            |                       |                          |
+| 1  |  12 |    Danish   | CS study   |        A bit          |           N/A            |
+| 1  |  12 |    Danish   | CS study   |        A bit          |           N/A            |
+| 1  |  12 |    Danish   | CS study   |        A bit          |           N/A            |
