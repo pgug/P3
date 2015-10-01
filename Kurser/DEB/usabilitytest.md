@@ -23,5 +23,5 @@ Turn off the sound
 | ID | AGE | NATIONALITY | OCCUPATION | SMARTPHONE EXPERIENCE | NORMAL EXERCISE IN A DAY |
 |----|-----|-------------|------------|-----------------------|--------------------------|
 | 1  |  12 |    Danish   | CS study   |        A bit          |           N/A            |
-| 1  |  12 |    Danish   | CS study   |        A bit          |           N/A            |
-| 1  |  12 |    Danish   | CS study   |        A bit          |           N/A            |
+| 2  |  12 |    Danish   | CS study   |        A bit          |           N/A            |
+| 3  |  12 |    Danish   | CS study   |        A bit          |           N/A            |
