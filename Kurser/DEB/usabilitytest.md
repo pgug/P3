@@ -11,3 +11,10 @@ Register and sign in.
 Send a challenge to a friend named John
 
 ## Questionnaire
+
+| ID | AGE | NATIONALITY | OCCUPATION | SMARTPHONE EXPERIENCE | NORMAL EXERCISE IN A DAY |
+------------------------------------------------------------------------------------------
+|    |     |             |            |                       |                          |
+|    |     |             |            |                       |                          |
+|    |     |             |            |                       |                          |
+|    |     |             |            |                       |                          |
