@@ -23,6 +23,6 @@
 
 |    Problem           | Classification |  1  |  2  |  3 | Number of times |
 |----------------------|----------------|-----|-----|----|-----------------|
-| 1. No coffee         |    Cosmetic    |     |  x  |    |                 |
-| 2. App died          |    Critical    |  x  |     |    |                 |
-| 3. Can't find friend |    Serious     |     |     |  x |                 |
+| 1. No coffee         |    Cosmetic    |     |  x  |    |      42         |
+| 2. App died          |    Critical    |  x  |     |    |       5         |
+| 3. Can't find friend |    Serious     |     |     |  x |       7         |
