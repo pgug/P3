@@ -12,7 +12,7 @@
 
 ### Advokat/Iværksætterhjælp
 
-**Formål**
+**Formål:** En person der hjælper en iværksætter igang. Personen har mulighed for at øve sig i brugen af systemet og ønsker hurtigt at få iværksætteren igang selv.
 
 **Karakterstik**
 
