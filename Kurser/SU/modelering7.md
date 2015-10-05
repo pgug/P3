@@ -8,7 +8,7 @@
 
 **Karakterstik:** En iværksætter kan være nystartet indenfor mange forskellige virksomhedstyper og kan dermed havde mange forskellige behov og it kundskaber.
 
-**Eksempler**
+**Eksempler:**
 
 ### Advokat/Iværksætterhjælp
 
@@ -17,3 +17,6 @@
 **Karakterstik:** Der er en mindre mængde af advokater/iværksætterhjælp som ofte har en hvis erfaring indenfor systemet.
 
 **Eksempler:**
+
+## Brugsmønster
+
