@@ -22,11 +22,11 @@
 
 ## Questionnaire
 
-| ID | AGE | NATIONALITY | OCCUPATION | SMARTPHONE EXPERIENCE | NORMAL EXERCISE IN A DAY |
+| ID | AGE | NATIONALITY | OCCUPATION | SMARTPHONE EXPERIENCE | NORMAL EXERCISE IN A WEEK|
 |----|-----|-------------|------------|-----------------------|--------------------------|
-| 1  |  12 |    Danish   | CS study   |        A bit          |           N/A            |
-| 2  |  12 |    Danish   | CS study   |        A bit          |           N/A            |
-| 3  |  12 |    Danish   | CS study   |        A bit          |           N/A            |
+| 1  |  20 |    Danish   | Student    |        8/10           |           6 hours        |
+| 2  |  21 |    Danish   | Student    |        6/10           |           14 hours       |
+| 3  |  19 |    Danish   | Student    |        10/10          |           1 hours        |
 
 ## Classified usability problems
 
