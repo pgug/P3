@@ -1,0 +1,43 @@
+\input{setup/preamble.tex} % package inclusion and set up of the document
+
+\begin{document}
+
+\input{sections/frontpage.tex}
+\input{sections/titlepages.tex}
+
+
+\cleardoublepage
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Gruppe ds315e15}
+\lhead{???????????????}
+
+
+\tableofcontents
+\newpage
+
+%Page numbers start at preface
+\clearpage
+\setcounter{page}{1}
+\fancyfoot[C]{\thepage}
+
+\input{sections/preface.tex}
+\cleardoublepage
+
+\input{sections/Introduction.tex}
+
+\input{sections/methods.tex}
+\input{sections/systemSelection.tex}
+\input{sections/problemDomain.tex}
+\input{sections/applicationDomain.tex}
+
+\input{sections/design.tex}
+\input{sections/implementation.tex}
+
+\input{sections/conclusion.tex}
+\input{sections/ordforklaring.tex}
+\bibliographystyle{plain}
+\bibliography{references}
+\appendix
+\input{sections/appendix.tex}
+\end{document}
