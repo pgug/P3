@@ -2,7 +2,7 @@
 
 In this chapter the application domain will be studied, with the aim of gaining a better insight into the context in which the solution should be implemented.
 
-The methods of analysis used are borrowed from the book "Objected-oriented Design"\citep{FACTORPage}. It is recommended, although not necessary, to have knowledge of the methods used in the book.
+%The methods of analysis used are borrowed from the book "Objected-oriented Design"\citep{FACTORPage}. It is recommended, although not necessary, to have knowledge of the methods used in the book.
 
 The application domain is defined as the organization that manages, monitors, or controls a problem domain.
 
@@ -14,8 +14,8 @@ From our analysis of the application domain, this section should aim to answer t
 
 The purpose of the analysis is to determine the requirements for using the system. This is done by examining these points:
 \begin{itemize}
-\item \textbf{Use:} Determines how the actors interact with the system and results in a description
-of use cases and actors.
+\item \textbf{Use:} Determines which actors interact with the system and what they do and what task they perform.
+
 \item \textbf{Features:} Provides requirements for information processing in the application domain and performance
 provides a complete feature list of specifications of complex functions.
 \item \textbf{User interface:} Defines the system's user interface and results in a complete overview of the user interface.
@@ -23,7 +23,7 @@ provides a complete feature list of specifications of complex functions.
 
 Use and functions will provide insight into the actual use of the system and what features are
 necessary to solve the issues that exist in the problem domain.
-Interface section provides a picture of what the finished system should look like, which can be using during system development.
+The interface section provides a picture of what the finished system should look like, which can be used during system development to produce the interface.
 
 Once the application domain has been analyzed, there should be specific parts for both functionality and user interface that can be implemented in a solution.
 
@@ -48,13 +48,13 @@ A use case is an abstraction of the interaction between the actors and the syste
 
 \subsubsection{Actors}
 
-The following three actors are the basic types of people who will be using the system. \\
+The following actors are the basic types of people who will be using the system. \\
 
 \fbox{\begin{minipage}{32.3em}
 \textbf{Employee:}
 \begin{description}
   \item[Purpose] \hfill \\
-  The average employee who works on company projects. Needs be able to access projects he/she is assigned to.
+  An employee who works on company projects. Needs be able to access projects he/she is assigned to.
   \item[Characteristics] \hfill \\
   Varying levels of familiarity with the system.
   \item[Example] \hfill \\
@@ -72,7 +72,7 @@ The following three actors are the basic types of people who will be using the s
   Senior employee, high level of familiarity with the system.
   \item[Example] \hfill \\
   A:
-  Uses the system many times a day to access her project page, in order to view tasks, create new ones and view overall progress or comments. The system is essential for coordination of the project. May access CRM to input new customer data or read existing, in order to contact customer to recieve clarification on requirements.
+  Uses the system many times a day to access her project page, in order to view tasks, create new ones and view overall progress or comments. The system is essential for coordination of the project. May access CRM to input new customer data or read existing, in order to contact customer to receive clarification on requirements.
   B:
   Will use the system to setup a new project page when new projects arise. Will manage them and moderate content within.
 %\ldots
@@ -83,7 +83,7 @@ The following three actors are the basic types of people who will be using the s
 \textbf{CEO:}
 \begin{description}
   \item[Purpose] \hfill \\
-  CEO of the company. Has admin access to everything. Needs access to CRM and finance. Depending on size of   company may also participate in projects, but if not will still view projects in order to judge progress.
+  CEO of the company. Has admin access to everything. Needs access to CRM and finance. Depending on the size of the company the CEO may also participate in projects, but if not, will still have access to all projects. Can add and update employees and products.
   \item[Characteristics] \hfill \\
   Depending on the size and structure of a company, the CEO may be more or less hands-on. Will have varying needs and experience.
   \item[Example] \hfill \\
@@ -133,8 +133,8 @@ The use cases are presented in the form of text, where a given use case is descr
   \item[Actor(s)] \hfill \\
   CEO, Super Employee, Employee
   \item[Use Case] \hfill \\
-   A new comment can be added to a task by any user who has access to the project in which the chosen task resides. The user enters the project page for the project he wishes to create a new task for. %He is taken to the overview of the project where he can see, statistics, deadlines and other information. 
-  He is then taken to the project overview where the user can see an overview of the tasks. Clicking on a task will take the user to page containing detailed info of only this task. 
+   A new comment can be added to a task by any user who has access to the project in which the chosen task resides. The user enters the project page for the project that has the task he/she wishes to comment on.
+  The user is then taken to the project overview where the user can see an overview of the tasks. Clicking on a task will take the user to page containing detailed info of only this task. 
   There will be a text box towards the bottom of the page with a submit below it. The user fills out the text box with their comment, presses the submit button and the system then receives the data. It will give an error message if the input is not accepted. If the input is accepted the use case is ended and a new comment is added to the task.
   
   \item[Objects] \hfill \\
@@ -144,12 +144,13 @@ The use cases are presented in the form of text, where a given use case is descr
 \end{minipage}}
 
 \fbox{\begin{minipage}{32.3em}
-\textbf{View Project:}
+\textbf{View Project Page:}
 \begin{description}
   \item[Actor(s)] \hfill \\
-  CEO, Super Employee
+  CEO, Super Employee, Employee, Customer
   \item[Use Case] \hfill \\
-
+ A project can be viewed by any user who has been given access to the project he/she wants to view. The user simply chooses the menu item with the project's name on it in the left navigation bar. The user is now on the project page and can view and edit tasks and so on.
+The use case is hereby ended ended and the project page has been visited.
   \item[Objects] \hfill \\
   Project, User
 
@@ -177,7 +178,7 @@ The use cases are presented in the form of text, where a given use case is descr
   \item[Actor(s)] \hfill \\
   CEO, Super Employee   
   \item[Use Case] \hfill \\
- Projects can be edited by super employees and CEO's. CEO's can access all projects, super employees only those they themselves have created. They will edit projects by first visiting the "Project Overview" menu item. This will bring them to a page where one can see an overview of the projects the user has access to. The user clicks on a project, where after he is taken to the detailed information page for the specific project. Here the user can edit existing data or input new relevant data. The system then receives the data, it will give an error message if the input is not accepted. If the input is accepted the use case is ended and the project has been successfully edited.
+ Projects can be edited by super employees and CEO's. CEO's can access all projects, super employees only those they themselves have created. They will edit projects by first visiting the "Project Overview" menu item. This will bring them to a page where one can see an overview of the projects the user has access to. The user clicks on a project, where after he is taken to the detailed information page for the specific project. Here the user can change which employees have access, the name of the project and whether the project is active or inactive. The system then receives the data, it will give an error message if the input is not accepted. If the input is accepted the use case is ended and the project has been successfully edited.
   
   \item[Objects] \hfill \\
   Project, User
@@ -205,9 +206,45 @@ CEO's can view finance information and add new expenses. First they visit the Fi
   \item[Actor(s)] \hfill \\
   CEO, Super Employee
   \item[Use Case] \hfill \\
-CEO or super employees can access the CRM system, but only the CEO those assigned to projects him/herself is not currently assigned to. First they visit the CRM page where they can see an overview of customers. The user presses the "Add New Customer" button,  where after he is taken to the customer adding page. Here the user inputs the relevant data and the system then receives the data, it will give an error message if the input is not accepted. If the input is accepted the use case is ended and a new customer is added.
+CEO's or super employees can access the CRM system, but only the CEO those assigned to projects him/herself is not currently assigned to. First they visit the CRM page where they can see an overview of customers. The user presses the "Add New Customer" button,  where after he is taken to the customer adding page. Here the user inputs the relevant data and the system then receives the data, it will give an error message if the input is not accepted. If the input is accepted the use case is ended and a new customer is added.
   \item[Objects] \hfill \\
   Customer
+\end{description}
+\end{minipage}}
+
+\fbox{\begin{minipage}{32.3em}
+\textbf{Create New User:}
+\begin{description}
+  \item[Actor(s)] \hfill \\
+  CEO
+  \item[Use Case] \hfill \\
+CEO's can view the current list of users and update their user information. First they visit the user management page where they can see an overview of the users. There will be a menu item called "New". Choosing this menu item will bring the user to a new page, where the user inputs the new user data. The system then receives the data and will give an error message if the input is not accepted. If the input is accepted the use case is ended and a new user is created.
+  \item[Objects] \hfill \\
+  User
+\end{description}
+\end{minipage}}
+
+\fbox{\begin{minipage}{32.3em}
+\textbf{Create New Product:}
+\begin{description}
+  \item[Actor(s)] \hfill \\
+  CEO
+  \item[Use Case] \hfill \\
+CEO's can view the current list of users and update or delete them. First they visit the product management page where they can see an overview of the products. There will be a menu item called "New". Choosing this menu item will bring the user to a new page, where the user inputs the new product data. The system then receives the data and will give an error message if the input is not accepted. If the input is accepted the use case is ended and a new product is added.
+  \item[Objects] \hfill \\
+  User
+\end{description}
+\end{minipage}}
+
+\fbox{\begin{minipage}{32.3em}
+\textbf{Update Company Settings:}
+\begin{description}
+  \item[Actor(s)] \hfill \\
+  CEO
+  \item[Use Case] \hfill \\
+CEO's can view the current settings the system has on the company, such as name and others related to system usage. First they visit the company configuration page where they can see an overview of the company information. Here they can edit the information contained in the different fields and press submit when satisfied. The system then receives the data and will give an error message if the input is not accepted. If the input is accepted the use case is ended and company settings have been updated.
+  \item[Objects] \hfill \\
+  User
 \end{description}
 \end{minipage}}
 
@@ -223,13 +260,16 @@ Below is the actor table. The actor table shows the link between actors and the 
 >{\columncolor[HTML]{EFEFEF}}l |c|c|c|c|}
 \hline
                    & \multicolumn{1}{l|}{\cellcolor[HTML]{EFEFEF}CEO} & \multicolumn{1}{l|}{\cellcolor[HTML]{EFEFEF}Super Employee} & \multicolumn{1}{l|}{\cellcolor[HTML]{EFEFEF}Employee} & \multicolumn{1}{l|}{\cellcolor[HTML]{EFEFEF}Customer} \\ \hline
-View Project       & x                                                & x                                                           & x                                                     & x                                                     \\ \hline
+View Project Page  & x                                                & x                                                           & x                                                     & x                                                     \\ \hline
 New Task           & x                                                & x                                                           & x                                                     &                                                       \\ \hline
 New Task Comment   & x                                                & x                                                           & x                                                     &                                                       \\ \hline
 New Project        & x                                                & x                                                           &                                                       &                                                       \\ \hline
 Update Project     & x                                                & x                                                           &                                                       &                                                       \\ \hline
 New Customer       & x                                                & x                                                           &                                                       &                                                       \\ \hline
 New Expense/Income & x                                                &                                                             &                                                       &                                                       \\ \hline
+New User           & x                                                &                                                             &                                                       &                                                       \\ \hline
+New Product        & x                                                &                                                             &                                                       &                                                       \\ \hline
+Update Company Set. & x                                                &                                                             &                                                       &                                                       \\ \hline
 \end{tabular}
 \end{table}
 
@@ -238,8 +278,24 @@ The use cases described will be used when planning the user interface for the sy
 
 \subsection{Functions}
 
-This purpose of this section is to identify all the functions the system should have, in order to then determine the requirements for these functions. Functions are defined as "a facility for making a model useful for actors", they essentially feed a system model with information. 
-We will be using the use cases and events from prior sections, to lay the foundation for these functions.
+This purpose of this section is to identify all the functions the system should have, in order to then determine the requirements for these functions. Functions are defined as "a facility for making a model useful for actors".
+
+
+Functions are related to the events made in the problem domain section and the use cases made in the application domain. 
+Events are specifically about what happens to objects in the problem domain. Use cases are about how users use the system. Functions describe what the system is going to do. Below is an example from an unrelated system, to show how these three descriptors are related.
+
+\begin{table}[h]
+\centering
+%\caption{My caption}
+\label{my-label}
+\begin{tabular}{|l|l|l|}
+\hline
+Event                                                                                                                & Use case                                                                                                                                                     & Function                                                                                                                                       \\ \hline
+\begin{tabular}[c]{@{}l@{}}‘Cancelling order’ \\ – a customer cancels \\ an order at a specific\\ time.\end{tabular} & \begin{tabular}[c]{@{}l@{}}‘Remove order’ \\ – a user in the \\ application-domain \\ removes an order \\ for a customer\\ by using the system.\end{tabular} & \begin{tabular}[c]{@{}l@{}}‘Delete order’ \\ – the object of the order \\ class is removed from \\ the model of the \\ IT-system.\end{tabular} \\ \hline
+\end{tabular}
+\end{table}
+
+%We will be using the use cases and events from prior sections, to lay the foundation for these functions.
 
 Functions can be classified into different types. There are four different types of functions. The following definitions of the types are taken from the book "Objected-oriented Design"\citep{FACTORPage}.
 
@@ -257,8 +313,7 @@ Functions can be classified into different types. There are four different types
 
 Functions are not necessarily a single type. Complex functions may be classified as multiple types. \\
 
-
-
+Beyond categorizing the functions as different types, they will also be given a complexity score. The score will be based on a simple four-step scale: simple, medium and complex and highly complex. The complexity assessment helps you produce an estimate of the development time needed for each function. It helps with planning and when you are making a product for customer, it is useful when negotiating a contract.
 
 
 
