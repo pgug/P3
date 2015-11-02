@@ -166,7 +166,7 @@ The Employee object starts by the "Hired" function. The object will then reside 
 
 \subsubsection*{Project}
 
-When a project is added it uses the "Project added" function which creates the "Project" object that will reside in the "Active" state. The "Project" object has an "Update" function that will update the "Project" object, it also has an "Task added" function, that will iteratively add tasks for the project.
+When a project is added it uses the "Project added" function which creates the "Project" object that will reside in the "Active" state. The project has three possible states, Active, Inactive and Completed. Active is when the project is currently in development. Inactive is when a project is set on standby, and completed is when the project is finished and will not be worked on anymore. When a project is in the active state, the "Project" object has an "Update" function that will update the "Project" object, it also has an "Task added" function, that will iteratively add tasks for the project. 
 
 \begin{figure}[H]
     \centering
