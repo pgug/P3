@@ -166,7 +166,7 @@ The Employee object starts by the "Hired" function. The object will then reside 
 
 \subsubsection*{Project}
 
-When a project is added it uses the "Project added" function which creates the "Project" object that will reside in the "Active" state. The "Project" object has an "Update" function that will update the "Project" object, it also has an "Task added" function, that will iteratively add tasks for the project.
+When a project is added it uses the "Project added" function which creates the "Project" object that will reside in the "Active" state. The project has three possible states, Active, Inactive and Completed. Active is when the project is currently in development. Inactive is when a project is set on standby, and completed is when the project is finished and will not be worked on anymore. When a project is in the active state, the "Project" object has an "Update" function that will update the "Project" object, it also has an "Task added" function, that will iteratively add tasks for the project. 
 
 \begin{figure}[H]
     \centering
@@ -209,6 +209,8 @@ The "Task" object gets created with a "Task created" function. The "Task" object
 When a task gets commented it signals the "Task comment added" function. The "Task comment" object will exist in the Active state. A "Task comment" object can be updated iterative with the "Update" function and can be deleted by the "Comment deleted" function.
 
 \subsubsection*{Budget}
+
+The "Budget" object starts with the "Budget added" function. It will then be in an "Active" state. The active state has a "Income" and "Expense" function. The object will end when the object is deleted.
 
 \begin{figure}[H]
     \centering
