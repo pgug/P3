@@ -46,7 +46,6 @@ The user class identifies the users of the program. A user belongs to a specific
 
 \begin{itemize}
   %\item \textbf{Documents} Information like document name, location, context etc.
-  
   \item \textbf{Customer} \\
   The user class identifies the customers. It has attributes such as name, contact info, staff role. It is associated with the company class.
 \end{itemize}
@@ -60,10 +59,7 @@ This class contains information about projects, with attributes such as project 
 Information about tasks that are connected to individual projects. Attributes such as name, description, employee(s) assigned, deadline.
   \item \textbf{Task Comment} \\
 Users can comment on an existing task. that are connected to individual projects. Attributes like comment content and employee.
-
 \end{itemize}
-
-
 
 \subsubsection*{Finance}
 
@@ -78,11 +74,10 @@ Users can comment on an existing task. that are connected to individual projects
 \end{itemize}
 
 \subsection{Events}
-From the classes, we have below derived a number of events that could take place between objects from the different classes. Identifying these events is important, as it improves our knowledge of what needs to be implemented in the program.
-
+From the classes, we have below derived a number of events that could take place between objects from the different classes. Identifying these events is important, as it improves our knowledge of what needs to be implemented in the program.\\
+\\
 To create an overview of the events and the connection between events and classes, we have created an event table. By looking at the event table you can quickly see what events are related to which classes.
 That there is a symbol indicates, a relation between an event and a class. The "+" symbol indicates that the event can happen 0 and 1 times for each object and the "*" symbol indicates that the event can happen 0 or more times.
-
 
 \hspace*{-2,5cm}
 \begin{tabular}{|l||c|c|c|c|c|c|c|c|}
@@ -134,8 +129,6 @@ Based on the events in the event table, we can make behavioral patterns. The ove
 \\
 Behavioral patterns can be described by statechart diagrams. State diagrams give an abstract description of system behavior, by taking an object of a single class and showing the different states it will inhabit as it goes through the system.
 We have therefore made statechart diagrams of some of the more important events. These statechart diagrams will be based on the events we uncovered in the event table.
-
-
 
 \subsubsection*{Company}
 
@@ -220,42 +213,9 @@ The "Product" object starts with the "Product added" function. It will then be i
     \label{fig:budgetActivityDiagram}
 \end{figure}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 \subsection{Summary}
 
 In this chapter the different classes relevant to the problem domain have been found. Events have been found for each of these classes. 
 Based on those events a class diagram has been produced, demonstrating the relations between the different classes. Furthermore the behavior of a number of important classes has been analyzed. Based on all this is now a foundation for what classes the final program should contain, their relations and their behavior.
 
 The next chapter will focus on the context in which the solution would be used. The chapter take a closer look at what the solution should be able to do, how users will be using the solution and to best make the solution fit the needs of the users.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
