@@ -24,21 +24,20 @@ Through the process of brainstorming, we have been able to produce a list of cla
 The classes have been divided into four different groups, one group for each part of the program, as described in our system definition.
 
 \subsubsection*{Main}
-This is the main section of the program. When the user logs in to the program, they see information about their company. The main menu provides a variety of options, used to manage the company, and the projects it is currently working on. From this page it is also possible to view the company's employees and customers, along with additional information about them.
+%This is the main section of the program. When the user logs in to the program, they see information about their company. The main menu provides a variety of options, used to manage the company, and the projects it is currently working on. From this page it is also possible to view the company's employees and customers, along with additional information about them.
 
 \begin{itemize}
   \item \textbf{Company} \\
- The company class is one of the main classes in the program. It will be used to keep track of the data of a specific company. A company can be created by a user and has users associated with it.
+The company class is one of the main classes in the program. It will be used to keep track of the data of a specific company. A company can be created by a user and has users associated with it.
   
 %This is the main module in the program. A company page is the hub for which all the information about the company is contained. It is possible to access multiple modules from this module. information such as VAT identification number (VATIN), clients and employees.
   
  % \item \textbf{Project Management} 
   
 %When a company wants to produce something, or provide a service, they create a project for the company. This is done in the project management module. From here it is possible to assign employees to different projects, in different roles. From the project management page, you can choose from the different projects the company currently is working on, and view information about them. Each project has a separate budget, set by the project admin. This budget is used on salaries and product creation.
-  
-   information. 
+
   \item \textbf{User} \\
-The user class identifies the users of the program. A user class can create or join companies, and its association with the company class, show its current status in a specific company, such as employer or employee.
+The user class identifies the users of the program. A user belongs to a specific company and has certain privileges. Also other attributes such as name and wage. It is associated with the company class.
   
 %Contains information about the employees in a company. Information such as the employees names, rank and current projects.
 \end{itemize}
@@ -49,14 +48,14 @@ The user class identifies the users of the program. A user class can create or j
   %\item \textbf{Documents} Information like document name, location, context etc.
   
   \item \textbf{Customer} \\
-  The user class identifies the customers. It has attributes such as name, contact info. It is associated with the company class.
+  The user class identifies the customers. It has attributes such as name, contact info, staff role. It is associated with the company class.
 \end{itemize}
 
 \subsubsection*{Project}
 
 \begin{itemize}
   \item \textbf{Project} \\
-This class contains information about projects, with attributes such as project name and users connected to the project. It is associated with both the user, company and customer classes.
+This class contains information about projects, with attributes such as project name and users connected to the project. It is associated with both the user and customer classes.
   \item \textbf{Task} \\
 Information about tasks that are connected to individual projects. Attributes such as name, description, employee(s) assigned, deadline.
   \item \textbf{Task Comment} \\
@@ -70,7 +69,8 @@ Users can comment on an existing task. that are connected to individual projects
 
 \begin{itemize}
   \item \textbf{Budget} \\
-  This class contains finance information, such as expenditure and income. 
+  This class contains financial information related to expenses and income.
+  There are two subclasses within the budget class, expense and income. 
   % Taxes, capital, profit reinvestment.
  
   %\item \textbf{Income} Information such as, name, company, time etc.
@@ -94,22 +94,22 @@ That there is a symbol indicates, a relation between an event and a class. The "
    Project added                   &    *    &    *     &    +    &     *    &         &         &         &                 \\\hline
    Project updated                 &         &    *     &    *    &          &         &         &         &                 \\\hline
    Project deleted                 &    *    &    *     &    +    &     *    &         &         &         &                 \\\hline
-   Task added                      &         &          &    +    &          &         &         &   +     &   *             \\\hline 
-   Task deleted                    &         &          &    *    &          &         &         &   +     &   +             \\\hline
-   Task updated                    &         &    *     &    *    &          &         &         &   *     &   *             \\\hline
-   Task finished                   &         &    *     &    *    &          &         &         &   +     &   +             \\\hline
-   TC added                        &         &    *     &         &          &         &         &   *     &   *             \\\hline
+   Task added                      &         &          &    *    &          &         &         &   +     &                 \\\hline 
+   Task deleted                    &         &          &    *    &          &         &         &   +     &                 \\\hline
+   Task updated                    &         &    *     &    *    &          &         &         &   *     &                 \\\hline
+   Task finished                   &         &    *     &    *    &          &         &         &   +     &                 \\\hline
+   TC added                        &         &    *     &         &          &         &         &   *     &   +             \\\hline
    TC updated                      &         &    *     &         &          &         &         &   *     &   *             \\\hline
-   TC deleted                      &         &    *     &         &          &         &         &   *     &   *             \\\hline
+   TC deleted                      &         &    *     &         &          &         &         &   *     &   +             \\\hline
    Product added                   &    *    &          &         &          &         &    +    &         &                 \\\hline
-   Product deleted                 &    *    &          &         &          &         &    +    &         &                 \\\hline
    Product updated                 &    *    &          &         &          &         &    *    &         &                 \\\hline
-   Income added                    &    *    &          &         &     *    &    +    &         &         &                 \\\hline
-   Income updated                  &    *    &          &         &     *    &    *    &         &         &                 \\\hline
-   Expense added                   &    *    &          &         &     *    &    +    &    *    &         &                 \\\hline
-   Expense updated                 &    *    &          &         &     *    &    *    &         &         &                 \\\hline
-   Employee added                  &    *    &    +     &         &          &         &         &         &                 \\\hline
-   Employee updated                &    *    &    *     &         &          &         &         &         &                 \\\hline
+   Product deleted                 &    *    &          &         &          &         &    +    &         &                 \\\hline
+   Income added                    &    *    &          &         &     *    &    +    &    *    &         &                 \\\hline
+   Income updated                  &    *    &          &         &     *    &    *    &    *    &         &                 \\\hline
+   Expense added                   &    *    &    *     &         &     *    &    +    &    *    &         &                 \\\hline
+   Expense updated                 &    *    &    *     &         &     *    &    *    &    *    &         &                 \\\hline
+   User added                  &    *    &    +     &         &          &         &         &         &                 \\\hline
+   User updated                &    *    &    *     &         &          &         &         &         &                 \\\hline
    Company added                   &    +    &          &         &          &         &         &         &                 \\\hline
    Company updated                 &    *    &          &         &          &         &         &         &                 \\
   \hline
@@ -123,8 +123,8 @@ To describe the relations between the different classes, a class diagram has bee
 
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.12]{Images/ProblemDomain/klassediagram.png}
-    \caption{Class Diagram ???????}
+    \includegraphics[scale=0.7]{Images/ProblemDomain/temp_klassediagram.png}
+    \caption{TEMP*  Class Diagram ???????}
     \label{fig:Class Diagram}
 \end{figure}
 
@@ -140,7 +140,7 @@ We have therefore made statechart diagrams of some of the more important events.
 \subsubsection*{Company}
 
 The company gets created and will exist in the "Active" state until terminated with the company being closed.
-While the company active it can be updated iterative in the infinity.
+While the company is active it can be updated iteratively, infinitely.
 
 \begin{figure}[H]
     \centering
@@ -149,13 +149,9 @@ While the company active it can be updated iterative in the infinity.
     \label{fig:companyActivityDiagram}
 \end{figure}
 
-The company is a shitty class that shits all over your face, so prepare yourself and by that i mean your face. Your face will be in big pain because the shit contains a lot of chili so it will burn especially in your eyes. BTW we of the PYFFS(Protect Your Face From Shit) association recommend closing your eyes when it happens. If you don't close your eyes, there is 60\%+ chance of getting blind. other than that you will only lose about 80\% feeling in your face because of the chili from the shit that will hit your face very hard. \\
-If you have just read the following line, it means you have passed the test of reading the rapport :) High-Five for u!
-
-
 \subsubsection*{Customer}
 
-The object Customer will be created with the "customer Added" function, and will exist in the "Active" state. The Customer object can in the "Active" state be updated. The Customer object can also access an Comment, Expense and Income function, witch are all iterative.
+The object Customer will be created with the "customer Added" function, and will exist in the "Active" state. The Customer object can in the "Active" state be updated. The Customer object can also access the Comment, Expense and Income functions, which are all iterative.
 
 \begin{figure}[H]
     \centering
@@ -166,7 +162,7 @@ The object Customer will be created with the "customer Added" function, and will
 
 \subsubsection*{Employee}
 
-The Employee object starts by the "Hired" function. The object will then recist in the state "Active". From the "Active" state it can access the "Task added" and "Updated" function. The "Employee" object will end with a "Inactive" function. % Maybe inactive could be a state that makes it possible to go back to active.
+The Employee object starts by the "Hired" function. The object will then reside in the "Active" state. From the "Active" state it can access the "Task added" and "Updated" function. The "Employee" object will end with put in an "Inactive" state. % Maybe inactive could be a state that makes it possible to go back to active.
 
 \begin{figure}[H]
     \centering
@@ -177,7 +173,7 @@ The Employee object starts by the "Hired" function. The object will then recist 
 
 \subsubsection*{Project}
 
-When a project is added it uses the "Project added" function witch creates the "Project" object that will recist in the "Active" state. The "Project" object have an "Update" function that will update the "Project" object it also have an "Task added" function, witch will iterative add tasks for the project.
+When a project is added it uses the "Project added" function which creates the "Project" object that will reside in the "Active" state. The "Project" object has an "Update" function that will update the "Project" object, it also has an "Task added" function, that will iteratively add tasks for the project.
 
 \begin{figure}[H]
     \centering
@@ -188,7 +184,7 @@ When a project is added it uses the "Project added" function witch creates the "
 
 \subsubsection*{Product}
 
-The "Product" object starts with the "Product added" function. It will then be in the "Active" state where it can be updated iterative using the "Updated" function. It also have an "Budget" function, also iterative called. That function can add "Budget" objects, for the "Product" object.
+The "Product" object starts with the "Product added" function. It will then be in the "Active" state where it can be updated iteratively using the "Updated" function. It also have an "Budget" function, also called iteratively. That function can add "Budget" objects, for the "Product" object.
 
 \begin{figure}[H]
     \centering
@@ -223,6 +219,10 @@ The "Product" object starts with the "Product added" function. It will then be i
     \caption{Budget Activity}
     \label{fig:budgetActivityDiagram}
 \end{figure}
+
+
+
+
 
 
 
