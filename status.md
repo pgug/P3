@@ -31,7 +31,7 @@ Objekter -> Vi har arbejdet med relationer, haha, en til mange relationer virker
 
 ## Mangler i rapporten
 
-Mere linux
+Oprydning i klasser og attributer. Skal ligge i problem domain afsnittet. Kan måske udsættes til at at dette er helt på plads i koden.
 
 ## Lavet i rapporten
 
