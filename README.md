@@ -1,13 +1,6 @@
 # P3 Projekt #
 
-Dette git reposotory indeholder alt relevant til et datalogi og software projekt. Projektet foregår på Aalborg Universitet og er 3. semester.
-
-### Medlemmer ###
-
-* Charlie Dittfeldt Byrdam
-* Jesper Windelborg Nielsen
-* David Jahanshiri
-* Mark Lauridsen
+Dette git repository indeholder alt relevant til et datalogi og software projekt. Projektet foregår på Aalborg Universitet og er 3. semester.
 
 ### Gruppe ###
 
